@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IV Therapy Services</title>
 <style>
-body {font-family: Arial, sans-serif; line-height: 1.6;}
-.tab {overflow: hidden; background-color: #f1f1f1;}
+body {font-family: Arial, sans-serif; padding-top: 50px; margin: 0; line-height: 1.6;}
+.tab {overflow: hidden; background-color: #f1f1f1; position: fixed; top: 0; width: 100%; z-index: 10;}
 .tab button {background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; font-size: 17px;}
 .tab button:hover {background-color: #ddd;}
 .tab button.active {background-color: #ccc;}
-.tabcontent {display: none; padding: 6px 12px; border: 1px solid #ccc; border-top: none; margin-top: 20px;}
-.tabcontent h3 {padding-top: 10px; color: #333;}
-.tabcontent p {margin: 10px 0;}
+.tabcontent {display: none; padding: 16px; padding-top: 60px; border: 1px solid #ccc; border-top: none; margin-top: -1px;}
+.tabcontent h3 {color: #333;}
+.tabcontent p, .tabcontent ul {margin: 10px 0;}
 .tabcontent ul {list-style-type: square; padding-left: 20px;}
 .tabcontent li {margin-bottom: 5px;}
 </style>
@@ -27,7 +27,6 @@ body {font-family: Arial, sans-serif; line-height: 1.6;}
   <button class="tablinks" onclick="openCategory(event, 'PhysicalHealth')">Physical Health and Maintenance</button>
 </div>
 
-<!-- Tab content -->
 <div id="MentalWellbeing" class="tabcontent">
   <h3>Migraine and Headache</h3>
   <p>Discover Migraine Relief with IV Vitamins. Say goodbye to migraine pain and hello to a brighter, pain-free life with our customized IV drips designed to combat migraine symptoms and provide rapid relief.</p>
@@ -38,97 +37,134 @@ body {font-family: Arial, sans-serif; line-height: 1.6;}
     <li>Enhanced mental clarity</li>
     <li>Better overall well-being</li>
   </ul>
-  <p>Our Specialized Migraine Relief Drip includes Magnesium, B Vitamins, Electrolytes, and Vitamin C, administered by experienced medical professionals in a relaxing clinic setting.</p>
+  <p>Our Specialized Migraine Relief Drip includes Magnesium, B Vitamins, Electrolytes, and Vitamin C.</p>
 
-  <!-- ... Additional content for Stress / Fatigue ... -->
-  <!-- ... Additional content for Burn Out / Stress ... -->
-  <!-- ... Additional content for Depression ... -->
-  <!-- ... Additional content for Brain Fog ... -->
+  <h3>Stress and Fatigue</h3>
+  <p>Say goodbye to stress and fatigue, and hello to renewed energy and well-being. Our IV Vitamin Therapy can help you regain your vitality.</p>
+  <ul>
+    <li>Increased energy levels</li>
+    <li>Improved mental clarity</li>
+    <li>Reduced stress and anxiety</li>
+    <li>Enhanced overall well-being</li>
+  </ul>
+  <p>Our Stress and Fatigue Relief Drip includes a blend of B Vitamins, Vitamin C, Magnesium, and Amino Acids.</p>
+
+  <h3>Burnout and Stress</h3>
+  <p>Recharge and reclaim your life with our IV Vitamin Therapy designed to combat burnout's physical and mental toll.</p>
+  <ul>
+    <li>Renewed energy levels</li>
+    <li>Stress reduction</li>
+    <li>Improved mental clarity</li>
+    <li>Enhanced overall well-being</li>
+  </ul>
+  <p>Our Burnout Relief Drip includes B Vitamins, Vitamin C, Magnesium, and Amino Acids.</p>
+
+  <h3>Depression</h3>
+  <p>Find hope and healing with our IV Depression Therapy that offers improved mood and emotional well-being.</p>
+  <ul>
+    <li>Reduced feelings of sadness and hopelessness</li>
+    <li>Improved mood and emotional well-being</li>
+    <li>Enhanced mental clarity</li>
+    <li>Increased energy levels</li>
+    <li>Improved overall mental health</li>
+  </ul>
+  <p>Our Depression Relief Drip includes B Vitamins, Amino Acids, Magnesium, and 5-HTP.</p>
+
+  <h3>Brain Fog</h3>
+  <p>Clear away the cloud of brain fog with our IV therapy for improved cognitive function and mental alertness.</p>
+  <ul>
+    <li>Improved cognitive function</li>
+    <li>Increased mental alertness</li>
+    <li>Enhanced memory and focus</li>
+    <li>Reduced stress and anxiety</li>
+    <li>Improved overall well-being</li>
+  </ul>
+  <p>Our Brain Fog Relief Drip includes B Vitamins, Vitamin C, Magnesium, and Amino Acids.</p>
 </div>
 
 <div id="SubstanceRecovery" class="tabcontent">
   <h3>Addiction</h3>
-  <p>Break Free from Addiction with IV Therapy. Discover a powerful path to recovery with our treatment that reduces cravings and withdrawal symptoms.</p>
+  <p>Break Free from Addiction with IV Therapy. We provide a robust treatment aiding in addiction recovery.</p>
   <ul>
     <li>Rapid detoxification</li>
     <li>Decreased withdrawal symptoms</li>
     <li>Improved mental and physical well-being</li>
     <li>Enhanced motivation for recovery</li>
   </ul>
-  <p>Our Addiction Recovery IV Drip includes NAD+, Amino Acids, Vitamins, and Minerals, supported by compassionate care and expert guidance.</p>
+  <p>Our Addiction Recovery IV Drip includes NAD+, Amino Acids, Vitamins, and Minerals.</p>
 
   <h3>Alcohol Withdrawal</h3>
-  <p>Ease Alcohol Withdrawal with IV Vitamin Therapy. Our specialized drip is designed to alleviate withdrawal symptoms and support recovery.</p>
+  <p>Our IV Therapy for Alcohol Withdrawal provides vital support to alleviate withdrawal symptoms and promote recovery.</p>
   <ul>
     <li>Reduced nausea and vomiting</li>
     <li>Improved hydration and electrolyte balance</li>
     <li>Alleviated anxiety and discomfort</li>
     <li>Enhanced mental and physical well-being</li>
   </ul>
-  <p>Get personalized care with our Alcohol Withdrawal IV Drip, containing B Vitamins, Magnesium, Electrolytes, and Vitamin C, to help you reclaim your health.</p>
+  <p>Our Alcohol Withdrawal IV Drip includes B Vitamins, Magnesium, Electrolytes, and Vitamin C.</p>
 </div>
 
 <div id="WeightMetabolism" class="tabcontent">
   <h3>Weight Management</h3>
-  <p>Achieve Your Ideal Weight with IV Vitamin Therapy. Transform your health and wellness journey with the power of IV Vitamin Therapy.</p>
+  <p>Transform your health and wellness journey with our IV Therapy for Weight Management.</p>
   <ul>
     <li>Enhanced metabolism</li>
     <li>Increased energy levels</li>
     <li>Improved nutrient absorption</li>
     <li>Support for appetite control</li>
   </ul>
-  <p>Our Specialized Weight Management Drip includes B Vitamins, Amino Acids, L-Carnitine, and Vitamin C, providing customized treatment plans in a supportive and encouraging environment.</p>
+  <p>Our Specialized Weight Management Drip includes B Vitamins, Amino Acids, L-Carnitine, and Vitamin C.</p>
 
   <h3>Fertility</h3>
-  <p>Boost Your Fertility with IV Therapy. Unlock your path to parenthood with the power of IV Vitamin Therapy.</p>
+  <p>IV Therapy can be a valuable addition to your fertility journey, supporting reproductive health and hormonal balance.</p>
   <ul>
     <li>Enhanced reproductive health</li>
     <li>Improved hormonal balance</li>
     <li>Increased energy levels</li>
     <li>Reduced stress and anxiety</li>
   </ul>
-  <p>Our Specialized Fertility Drip includes Folic Acid, B Vitamins, Antioxidants, and Amino Acids, delivered in a supportive and encouraging setting.</p>
+  <p>Our Specialized Fertility Drip includes Folic Acid, B Vitamins, Antioxidants, and Amino Acids.</p>
 </div>
 
 <div id="LifeStages" class="tabcontent">
   <h3>Sexual Health</h3>
-  <p>Enhance Your Sexual Wellness with IV Therapy. Reignite passion and vitality with our specialized IV therapy designed for sexual health.</p>
+  <p>Our IV Therapy for Sexual Health supports increased libido, enhanced stamina, and improved performance.</p>
   <ul>
     <li>Increased libido and desire</li>
     <li>Enhanced stamina and performance</li>
     <li>Improved sexual satisfaction</li>
   </ul>
-  <p>Our Sexual Health Drip includes Amino Acids, L-Arginine, B Vitamins, and Zinc, provided in a confidential and supportive clinic setting.</p>
+  <p>Our Sexual Health Drip includes Amino Acids, L-Arginine, B Vitamins, and Zinc.</p>
 
   <h3>Menopause</h3>
-  <p>Navigate Menopause with IV Therapy. Find relief from menopausal symptoms and improve your overall well-being with our tailored IV therapy.</p>
+  <p>Our IV Therapy for Menopause can ease the transition and alleviate symptoms, promoting overall well-being.</p>
   <ul>
     <li>Alleviation of hot flashes and night sweats</li>
     <li>Improved mood and emotional balance</li>
     <li>Enhanced energy levels</li>
     <li>Support for hormonal balance</li>
   </ul>
-  <p>Our Menopause Relief Drip includes B Vitamins, Vitamin D, Magnesium, and Phytoestrogens, all aimed at easing your menopausal journey.</p>
+  <p>Our Menopause Relief Drip includes B Vitamins, Vitamin D, Magnesium, and Phytoestrogens.</p>
 
   <h3>Anti-Aging</h3>
-  <p>Turn Back Time with IV Anti-Aging Therapy. Rejuvenate your skin and body with our IV therapy that delivers vital nutrients to fight the signs of aging.</p>
+  <p>Our IV Anti-Aging Therapy helps fight the signs of aging, promoting healthier, youthful skin and increased vitality.</p>
   <ul>
     <li>Reduced appearance of fine lines and wrinkles</li>
     <li>Enhanced skin elasticity and hydration</li>
     <li>Improved collagen production</li>
   </ul>
-  <p>Our Anti-Aging Drip features a potent blend of Glutathione, Vitamin C, B Vitamins, and collagen-boosting amino acids.</p>
+  <p>Our Anti-Aging Drip features Glutathione, Vitamin C, B Vitamins, and collagen-boosting amino acids.</p>
 </div>
 
 <div id="PhysicalHealth" class="tabcontent">
   <h3>Hydration</h3>
-  <p>Revitalize and Rehydrate with IV Hydration Therapy. Stay hydrated and maintain optimal health with our specialized hydration treatments.</p>
+  <p>Our IV Hydration Therapy provides immediate hydration, replenishing fluids and electrolytes for optimal health.</p>
   <ul>
     <li>Immediate and thorough hydration</li>
     <li>Restoration of electrolyte balance</li>
     <li>Enhanced recovery from dehydration symptoms</li>
   </ul>
-  <p>Choose from a range of hydration solutions tailored to address hangover recovery, immune system support, or athletic performance enhancement.</p>
+  <p>Choose from our range of hydration solutions to meet your specific needs, whether recovering from a hangover, supporting your immune system, or enhancing athletic performance.</p>
 </div>
 
 <script>
@@ -143,7 +179,7 @@ function openCategory(evt, categoryName) {
     tablinks[i].className = tablinks[i].className.replace(" active", ""); // Remove "active" class from all tabs
   }
   document.getElementById(categoryName).style.display = "block"; // Show the clicked tab's content
-  evt.currentTarget.className += " active"; // Add "active" class to the current tab
+  evt.currentTarget.className += " active"; // Add "active" class to the button that opened the tab
 }
 document.getElementById("defaultOpen").click(); // Simulate a click on the default tab to open it on page load
 </script>
