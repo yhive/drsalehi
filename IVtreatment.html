@@ -106,4 +106,83 @@ body {font-family: Arial, sans-serif; line-height: 1.6;}
 
 <div id="WeightMetabolism" class="tabcontent">
   <h3>Weight Management</h3>
-  <p>Achieve Your Ideal Weight with IV Vitamin Therapy. Transform your health and wellness journey with the power of IV Vitamin Therapy.</p
+  <p>Achieve Your Ideal Weight with IV Vitamin Therapy. Transform your health and wellness journey with the power of IV Vitamin Therapy.</p>
+  <ul>
+    <li>Enhanced metabolism</li>
+    <li>Increased energy levels</li>
+    <li>Improved nutrient absorption</li>
+    <li>Support for appetite control</li>
+  </ul>
+  <p>Our Specialized Weight Management Drip includes B Vitamins, Amino Acids, L-Carnitine, and Vitamin C, providing customized treatment plans in a supportive and encouraging environment.</p>
+
+  <h3>Fertility</h3>
+  <p>Boost Your Fertility with IV Therapy. Unlock your path to parenthood with the power of IV Vitamin Therapy.</p>
+  <ul>
+    <li>Enhanced reproductive health</li>
+    <li>Improved hormonal balance</li>
+    <li>Increased energy levels</li>
+    <li>Reduced stress and anxiety</li>
+  </ul>
+  <p>Our Specialized Fertility Drip includes Folic Acid, B Vitamins, Antioxidants, and Amino Acids, delivered in a supportive and encouraging setting.</p>
+</div>
+
+<div id="LifeStages" class="tabcontent">
+  <h3>Sexual Health</h3>
+  <p>Enhance Your Sexual Wellness with IV Therapy. Reignite passion and vitality with our specialized IV therapy designed for sexual health.</p>
+  <ul>
+    <li>Increased libido and desire</li>
+    <li>Enhanced stamina and performance</li>
+    <li>Improved sexual satisfaction</li>
+  </ul>
+  <p>Our Sexual Health Drip includes Amino Acids, L-Arginine, B Vitamins, and Zinc, provided in a confidential and supportive clinic setting.</p>
+
+  <h3>Menopause</h3>
+  <p>Navigate Menopause with IV Therapy. Find relief from menopausal symptoms and improve your overall well-being with our tailored IV therapy.</p>
+  <ul>
+    <li>Alleviation of hot flashes and night sweats</li>
+    <li>Improved mood and emotional balance</li>
+    <li>Enhanced energy levels</li>
+    <li>Support for hormonal balance</li>
+  </ul>
+  <p>Our Menopause Relief Drip includes B Vitamins, Vitamin D, Magnesium, and Phytoestrogens, all aimed at easing your menopausal journey.</p>
+
+  <h3>Anti-Aging</h3>
+  <p>Turn Back Time with IV Anti-Aging Therapy. Rejuvenate your skin and body with our IV therapy that delivers vital nutrients to fight the signs of aging.</p>
+  <ul>
+    <li>Reduced appearance of fine lines and wrinkles</li>
+    <li>Enhanced skin elasticity and hydration</li>
+    <li>Improved collagen production</li>
+  </ul>
+  <p>Our Anti-Aging Drip features a potent blend of Glutathione, Vitamin C, B Vitamins, and collagen-boosting amino acids.</p>
+</div>
+
+<div id="PhysicalHealth" class="tabcontent">
+  <h3>Hydration</h3>
+  <p>Revitalize and Rehydrate with IV Hydration Therapy. Stay hydrated and maintain optimal health with our specialized hydration treatments.</p>
+  <ul>
+    <li>Immediate and thorough hydration</li>
+    <li>Restoration of electrolyte balance</li>
+    <li>Enhanced recovery from dehydration symptoms</li>
+  </ul>
+  <p>Choose from a range of hydration solutions tailored to address hangover recovery, immune system support, or athletic performance enhancement.</p>
+</div>
+
+<script>
+function openCategory(evt, categoryName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(categoryName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementsByClassName('tablinks')[0].click();
+</script>
+
+</body>
+</html>
